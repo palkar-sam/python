@@ -18,7 +18,7 @@ def index(request):
     page = {
         "forms":form,
         "list": item_list,
-        "title":"TODO LIST",
+        "title":"This is TODO LIST",
     }
     return render(request, 'todo/index.html', page)
 
