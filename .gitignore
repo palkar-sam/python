@@ -10,3 +10,4 @@ __pycache__/
 # Ignore all `.txt` files
 *.txt
 .venv/
+.myvenv/
