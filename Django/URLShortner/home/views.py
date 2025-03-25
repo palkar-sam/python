@@ -4,13 +4,15 @@ import json
 
 # Create your views here.
 def index(request):
-    return render(request, 'index1.html')
+    return render(request, 'index.html')
 
 def index_form(request):
     if(request.method == 'POST'):
         long_url = request.POST['long_url']
         new_url = shorten_url(long_url)
         print(f"Post url : {request.POST}")
+        return render(request, 'new_url.html', context = {'url': new_url})
+    
     return render(request, 'index.html')
 
 # function to shorten url 
