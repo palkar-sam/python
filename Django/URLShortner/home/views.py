@@ -19,7 +19,7 @@ def index_form(request):
 def shorten_url(url):
     # define access token in headers 
     headers = { 
-        'Authorization': 'Bearer 59b93ed08a4f98d26557814ec2434f4b5436ea1b', 
+        'Authorization': '', #Add Beare token here
         # 'Authorization': 'Bearer {TOKEN}', 
         'Content-Type': 'application/json', 
     } 
